@@ -1,0 +1,111 @@
+.topnav {
+	display: inline-block;
+    background-color: #429aec;
+    overflow: hidden;
+    text-align: center;
+    border-bottom-right-radius:8px;
+    border-bottom-left-radius:8px;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a{
+    display: inline-block;
+    color: #429aec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:#c5d5ec;
+    color: #429aec;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #c5d5ec;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 872px) {
+  .topnav a:not(:last-child) {display: none;}
+  .topnav a.icon {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1vh;
+
+}
+.topnav{
+    margin:0;
+    width: 10%;
+    float: right;
+    border-radius: 0px; 
+}
+
+}
+@media screen and (max-width: 872px) {
+  .topnav.responsive {position: relative;width: 100%}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+}
+.topnav.responsive a:hover {
+    background-color:#c5d5ec;
+    color: #429aec;
+}
+
+.topnav.responsive .dropdown-content {position: relative;width: 100%; margin-left: 0vw;}
+}
+.material-icons {
+  font-size: 16px; 
+  cursor:pointer;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width:16vmin;
+  margin-left: 49vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: #429aec;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Navbar</title>
+	<link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<div class="topnav" id="myTopnav">
+			<a href="#">ITEM1</a>
+			<a href="#">ITEM2</a>
+			<a href="#">ITEM3</a>
+			<a href="#" class="dropdown">More Components<i class="material-icons">arrow_drop_down</i>
+				<div class="dropdown-content">
+                  <a href="modal.html" class="clicked">Modal</a>
+                  <a href="collapse.html" class="clicked">Collapse</a>
+                  <a href="#" class="clicked">Link 3</a>
+                </div>
+			</a>
+			<a href="#">ITEM4</a>
+			<a href="#">ITEM5</a>
+			<a href="javascript:void(0);" class="icon" onclick="dropToogle()">&#9776;</a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+</body>
+</html>
