@@ -1,0 +1,15 @@
+public allBooks;
+
+ngOnInit() {
+    this.spinnerService.show();
+    this.allBooks = this.fetchAllInfo.getAllBooks().subscribe(
+      data => {
+        this.allBooks = data; // i am setting the json of all objects here
+      },
+      error => {
+        this.toastr.error('some error occured', 'Error');
+        console.log(error.errorMessage);
+      }
+    );
+}
+this.allBooks // but when i am acsessing it outside ngonint its giving me a subscriber object
